@@ -1,20 +1,9 @@
-variable "aws_os_2023" {
-    description = "AWS OS for the server"
-    type = string
-    default = "ami-0ced6a024bb18ff2e"
+variable "client_name" {
+    default = "default"
 }
 
-variable "my_instance_type" {
-    description = "Free tier instance"
-    type = string
-    default = "t2.micro"
-}
-
-variable "aws_subnet" {
-    description = "Subnet id for aws os"
-    type = string
-    default = "subnet-0900d66437acb58ea"
-    
+variable "Managed_by" {
+    default = "default"
 }
 
 variable "ubuntu_os" {
@@ -23,14 +12,8 @@ variable "ubuntu_os" {
     type = string
 }
 
-variable "Redhat_os" {
-    description = "Redhat OS for instance"
-    default = "ami-0e57fa2ecfa799574"
+variable "my_instance_type" {
+    description = "Free tier instance"
     type = string
-}
-
-variable "Redhat_subnet" {
-    description = "Subent id for Redhat"
-    default = "subnet-05bb039beb76b1835"
-    type = string
+    default = "t2.micro"
 }
